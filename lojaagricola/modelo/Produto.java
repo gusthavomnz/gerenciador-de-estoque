@@ -30,11 +30,7 @@ public class Produto {
                 " | Quantidade: " + quantidade;
     }
 
-    public String listaEstoque() {
-        return "Código: " + codigo +
-                " | Descrição: " + nome +
-                " | Quantidade: " + quantidade;
-    }
+
 
     // Getters e Setters
     public String getCodigo() {
@@ -85,3 +81,4 @@ public class Produto {
         this.quantidade = quantidade;
     }
 }
+
