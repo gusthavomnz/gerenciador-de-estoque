@@ -49,7 +49,7 @@ public class ListaEncadeada {
         return inicio;
     }
 
-    // ---------- MERGESORT VERDADEIRO ----------
+    // ---------- MERGESORT
     public void ordenarPorNome() {
         inicio = mergeSort(inicio);
     }
