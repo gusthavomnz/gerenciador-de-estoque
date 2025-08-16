@@ -290,13 +290,19 @@ public class interfaceGrafica extends javax.swing.JFrame {
     }
 
 
-    // Aplicar alteração de preço em todos os produtos:
+    /*
+    Aplicar alteração de preço em todos os produtos:
+    Se quiser abaixar o preço, basta colocar um sinal negativo. Ex : -20
+    */
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {
         double porcent = Double.parseDouble(JOptionPane.showInputDialog(this,"Digite a porcentagem de reajuste"));
         produtos.reajuste(CalculadorReajuste(porcent));
         JOptionPane.showMessageDialog(this,"Produtos reajustados. Aproveite os novos preços! ");
     }
 
+
+    // Metodo para retornar o valor da multiplicação para o calculo do reajuste. Se for negativo, irá retornar um numero menor que 0.
+    // Ex: Reajuste de -20%. Irá retornar 0,8.
     private double CalculadorReajuste (Double x) {
         double calculoReajuste = 1 + (x / 100);
         return calculoReajuste;
